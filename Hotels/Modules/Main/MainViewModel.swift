@@ -19,12 +19,17 @@ class MainViewModel {
   
   private let disposeBag = DisposeBag()
   
+  private let sortType = BehaviorRelay<SortType?>(value: nil)
+  
   let viewWillAppear = PublishRelay<Void>()
   
   let errorOccured = PublishRelay<Error>()
+  
   private let isLoading = PublishRelay<Bool>()
   
   let indexPathSelected = PublishRelay<IndexPath>()
+  
+  let sortButtonTapped = PublishRelay<Void>()
   
   private let hotels = BehaviorRelay<[Hotel]>(value: [])
   
@@ -59,6 +64,17 @@ class MainViewModel {
         guard let obj = self else { return Maybe.empty() }
         return obj.getHotels()
       }
+      .withLatestFrom(sortType) { hotels, sortType -> [Hotel] in
+        guard let sortType = sortType else { return hotels }
+        
+        // В данном случае видов сортировок мало, потому был выбран такой метод.
+        // При большем количестве сортировок можно было бы использовать стратегию и фабрику
+        
+        switch sortType {
+        case .byDistance: return hotels.sorted(by: { lhs, rhs in lhs.distance < rhs.distance })
+        case .byFreeRooms: return hotels.sorted(by: { lhs, rhs in lhs.availableRooms.count > rhs.availableRooms.count })
+        }
+      }
       .bind(to: hotels)
       .disposed(by: disposeBag)
     
@@ -66,6 +82,12 @@ class MainViewModel {
       .subscribe(onNext: { [weak router] hotel in
         router?.showMapView(with: hotel.latitude, longitude: hotel.longitude, title: hotel.name, address: hotel.address)
       }).disposed(by: disposeBag)
+    
+    sortButtonTapped.withLatestFrom(sortType).subscribe(onNext: { [weak router] currentSortType in
+      let changeSortTypeClosure: MainRouter.ChangeSortType = { [weak self] sortType in self?.sortType.accept(sortType) }
+      router?.showSortSelectorView(changeSortClosure: changeSortTypeClosure, currentSortType: currentSortType)
+    }).disposed(by: disposeBag)
+    
   }
   
   private func getHotels() -> Maybe<[Hotel]> {

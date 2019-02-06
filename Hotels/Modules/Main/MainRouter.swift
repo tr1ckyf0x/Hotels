@@ -12,6 +12,8 @@ import CoreLocation
 
 class MainRouter {
   
+  typealias ChangeSortType = (SortType?) -> ()
+  
   weak var view: MainViewController?
   private weak var activityViewController: ActivityViewController?
   
@@ -45,6 +47,14 @@ class MainRouter {
     
     if let mapViewController = mapViewController {
       view?.navigationController?.pushViewController(mapViewController, animated: true)
+    }
+  }
+  
+  func showSortSelectorView(changeSortClosure: @escaping ChangeSortType, currentSortType: SortType?) {
+    if let sortViewController = R.storyboard.main.sortViewController() {
+      sortViewController.changeSortTypeClosure = changeSortClosure
+      sortViewController.oldSortType = currentSortType
+      view?.navigationController?.pushViewController(sortViewController, animated: true)
     }
   }
 }

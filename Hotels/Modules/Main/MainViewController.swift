@@ -18,10 +18,13 @@ class MainViewController: UIViewController {
   
   @IBOutlet weak var tableView: UITableView!
   
+  @IBOutlet weak var sortButton: UIBarButtonItem!
+  
   var viewModel: MainViewModel!
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    tableView.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 8, right: 0)
     MainRouter.initMainController(self)
     setupBindings()
     setupDataSource()
@@ -29,6 +32,11 @@ class MainViewController: UIViewController {
   
   private func setupBindings() {
     rx.viewWillAppear.mapTo(Void()).asSignal(onErrorJustReturn: Void()).emit(to: viewModel.viewWillAppear).disposed(by: rx.disposeBag)
+    sortButton.rx.tap.asSignal().emit(to: viewModel.sortButtonTapped).disposed(by: rx.disposeBag)
+    
+//    viewModel.errorOccured.subscribe(onNext: { error in
+//      // Во ViewModel преобразовать в String и вывести пользователю сообщение об ошибке
+//    }).disposed(by: rx.disposeBag)
   }
   
   private func setupDataSource() {
@@ -49,9 +57,4 @@ class MainViewController: UIViewController {
   }
   
 }
-
-extension MainViewController: UITableViewDelegate {
-  
-}
-
 

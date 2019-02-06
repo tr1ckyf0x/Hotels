@@ -14,4 +14,7 @@ target 'Hotels' do
   pod 'SnapKit', '~> 4.2'
   pod 'R.swift'
   pod 'MaterialComponents/Ink+Extensions'
+  pod 'Firebase/Core'
+  pod 'Fabric', '~> 1.9.0'
+  pod 'Crashlytics', '~> 3.12.0'
 end

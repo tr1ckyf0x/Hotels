@@ -26,6 +26,7 @@ class HotelCardCell: UITableViewCell {
   private var inkTouchController: MDCInkTouchController?
   
   override func awakeFromNib() {
+    super.awakeFromNib()
     hotelImageView.kf.indicatorType = .activity
     
     inkTouchController = MDCInkTouchController(view: cardView)

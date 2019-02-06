@@ -14,7 +14,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Hotels" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="MainViewController" customModule="Hotels" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPU-Wp-Txw" customClass="DesignableView" customModule="Hotels" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="8" width="288" height="432"/>
+                                                    <rect key="frame" x="16" y="8" width="382" height="432"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -52,22 +52,22 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgN-YB-xTr" customClass="DesignableView" customModule="Hotels" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="8" width="288" height="432"/>
+                                                    <rect key="frame" x="16" y="8" width="382" height="432"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="5xl-aZ-OLA">
-                                                            <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="382"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="5xl-aZ-OLA" secondAttribute="height" multiplier="1:1" id="79x-Sr-7qR"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Western President Hotel at Times Square" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfg-Rp-kC5">
-                                                            <rect key="frame" x="8" y="227" width="272" height="53"/>
+                                                            <rect key="frame" x="8" y="321" width="366" height="53"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                                             <color key="textColor" name="TextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="69 miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAj-0v-33x">
-                                                            <rect key="frame" x="8" y="296" width="52" height="16"/>
+                                                            <rect key="frame" x="8" y="390" width="52" height="16"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="16" id="KYS-me-ibq"/>
                                                             </constraints>
@@ -76,13 +76,13 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250 West 77th Street, Manhattan" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8e-XR-TBT">
-                                                            <rect key="frame" x="8" y="344" width="272" height="18"/>
+                                                            <rect key="frame" x="8" y="438" width="366" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" name="PrimaryTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="P8o-sv-Asa" customClass="DesignableView" customModule="Hotels" customModuleProvider="target">
-                                                            <rect key="frame" x="64" y="296" width="1" height="16"/>
+                                                            <rect key="frame" x="64" y="390" width="1" height="16"/>
                                                             <color key="backgroundColor" name="DividerColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="1" id="kPv-W0-7Gr"/>
@@ -94,13 +94,13 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Available suits: 2:87:24:65:26:119:202:6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSb-yF-CEJ">
-                                                            <rect key="frame" x="8" y="320" width="272" height="16"/>
+                                                            <rect key="frame" x="8" y="414" width="366" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <color key="textColor" name="SecondaryTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9XW-gn-Beh" customClass="StarRatingView" customModule="Hotels" customModuleProvider="target">
-                                                            <rect key="frame" x="69" y="296" width="96" height="16"/>
+                                                            <rect key="frame" x="69" y="390" width="96" height="16"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="96" id="DqN-oH-wXY"/>
@@ -186,9 +186,10 @@
                         <barButtonItem key="rightBarButtonItem" image="ic_filter" id="BHM-cB-O0y"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="sortButton" destination="BHM-cB-O0y" id="Ewr-Sh-xNi"/>
                         <outlet property="tableView" destination="bAj-JS-fa6" id="G50-Xh-7dz"/>
                         <segue destination="CTF-dC-1YJ" kind="show" identifier="ShowDetails" id="FjC-Lt-Cbz"/>
-                        <segue destination="4CQ-aY-gXk" kind="show" id="dkB-Bd-kf8"/>
+                        <segue destination="4CQ-aY-gXk" kind="show" identifier="ShowSortSelector" id="dkB-Bd-kf8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -198,53 +199,54 @@
         <!--Sort View Controller-->
         <scene sceneID="wAH-QP-LZF">
             <objects>
-                <viewController id="4CQ-aY-gXk" customClass="SortViewController" customModule="Hotels" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sort View Controller" automaticallyAdjustsScrollViewInsets="NO" id="4CQ-aY-gXk" customClass="SortViewController" customModule="Hotels" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AIX-Kz-vYr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pXZ-6C-3ff">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pXZ-6C-3ff">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="50" id="MyE-7R-eCq" customClass="SortTypeCell" customModule="Hotels" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SortTypeCell" focusStyle="custom" rowHeight="60" id="MyE-7R-eCq" customClass="SortTypeCell" customModule="Hotels" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MyE-7R-eCq" id="dhS-ND-kQX">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUI-v2-ew2" customClass="DesignableView" customModule="Hotels" customModuleProvider="target">
-                                                    <rect key="frame" x="8" y="4" width="304" height="41.5"/>
+                                                    <rect key="frame" x="16" y="8" width="382" height="44"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wH5-Ok-Qxq">
-                                                            <rect key="frame" x="16" y="9" width="100" height="24"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htc-Ci-xmD">
+                                                            <rect key="frame" x="16" y="0.0" width="318" height="44"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="24" id="Dll-wO-Uc4"/>
+                                                                <constraint firstAttribute="height" constant="44" id="Kn4-1b-Pb9"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                             <color key="textColor" name="PrimaryTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fai-ym-ybC" customClass="DesignableView" customModule="Hotels" customModuleProvider="target">
-                                                            <rect key="frame" x="272" y="13" width="16" height="16"/>
-                                                            <color key="backgroundColor" name="LightSecondaryColor"/>
+                                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qK7-ts-Vvs" customClass="DesignableView" customModule="Hotels" customModuleProvider="target">
+                                                            <rect key="frame" x="350" y="14" width="16" height="16"/>
+                                                            <color key="backgroundColor" name="DarkSecondaryColor"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="16" id="cC7-m7-awZ"/>
-                                                                <constraint firstAttribute="width" secondItem="fai-ym-ybC" secondAttribute="height" multiplier="1:1" id="yXc-aE-6N6"/>
+                                                                <constraint firstAttribute="width" secondItem="qK7-ts-Vvs" secondAttribute="height" multiplier="1:1" id="97e-Ve-aOL"/>
+                                                                <constraint firstAttribute="width" constant="16" id="HdA-lg-xAr"/>
                                                             </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="circleCorner" value="YES"/>
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
                                                     </subviews>
-                                                    <color key="backgroundColor" name="LightSecondaryColor"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="fai-ym-ybC" secondAttribute="trailing" constant="16" id="5Jg-3J-SRl"/>
-                                                        <constraint firstItem="wH5-Ok-Qxq" firstAttribute="top" secondItem="fUI-v2-ew2" secondAttribute="top" priority="200" constant="8" id="FTc-fW-uiC"/>
-                                                        <constraint firstItem="wH5-Ok-Qxq" firstAttribute="leading" secondItem="fUI-v2-ew2" secondAttribute="leading" constant="16" id="FWv-1U-yCv"/>
-                                                        <constraint firstItem="fai-ym-ybC" firstAttribute="centerY" secondItem="fUI-v2-ew2" secondAttribute="centerY" id="elJ-FF-mxT"/>
-                                                        <constraint firstItem="wH5-Ok-Qxq" firstAttribute="centerY" secondItem="fUI-v2-ew2" secondAttribute="centerY" id="khh-0H-Ffi"/>
+                                                        <constraint firstItem="htc-Ci-xmD" firstAttribute="centerY" secondItem="fUI-v2-ew2" secondAttribute="centerY" id="25X-kN-hd1"/>
+                                                        <constraint firstAttribute="trailing" secondItem="qK7-ts-Vvs" secondAttribute="trailing" constant="16" id="6CO-Sv-LqJ"/>
+                                                        <constraint firstItem="qK7-ts-Vvs" firstAttribute="centerY" secondItem="fUI-v2-ew2" secondAttribute="centerY" id="VVF-Zg-hER"/>
+                                                        <constraint firstItem="qK7-ts-Vvs" firstAttribute="leading" secondItem="htc-Ci-xmD" secondAttribute="trailing" constant="16" id="Ysg-vH-TcQ"/>
+                                                        <constraint firstItem="htc-Ci-xmD" firstAttribute="leading" secondItem="fUI-v2-ew2" secondAttribute="leading" constant="16" id="ko1-TK-JIb"/>
+                                                        <constraint firstItem="htc-Ci-xmD" firstAttribute="top" secondItem="fUI-v2-ew2" secondAttribute="top" priority="750" id="yAa-7H-1yo"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -260,22 +262,22 @@
                                                             <real key="value" value="2"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="3"/>
+                                                            <real key="value" value="4"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="fUI-v2-ew2" secondAttribute="bottom" constant="4" id="Nn6-Z1-oib"/>
-                                                <constraint firstAttribute="trailing" secondItem="fUI-v2-ew2" secondAttribute="trailing" constant="8" id="OAs-6V-W0V"/>
-                                                <constraint firstItem="fUI-v2-ew2" firstAttribute="top" secondItem="dhS-ND-kQX" secondAttribute="top" constant="4" id="m2o-xw-9Rl"/>
-                                                <constraint firstItem="fUI-v2-ew2" firstAttribute="leading" secondItem="dhS-ND-kQX" secondAttribute="leading" constant="8" id="uLJ-iH-Dvm"/>
+                                                <constraint firstAttribute="bottom" secondItem="fUI-v2-ew2" secondAttribute="bottom" constant="8" id="Nn6-Z1-oib"/>
+                                                <constraint firstAttribute="trailing" secondItem="fUI-v2-ew2" secondAttribute="trailing" constant="16" id="OAs-6V-W0V"/>
+                                                <constraint firstItem="fUI-v2-ew2" firstAttribute="top" secondItem="dhS-ND-kQX" secondAttribute="top" constant="8" id="m2o-xw-9Rl"/>
+                                                <constraint firstItem="fUI-v2-ew2" firstAttribute="leading" secondItem="dhS-ND-kQX" secondAttribute="leading" constant="16" id="uLJ-iH-Dvm"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="cardView" destination="fUI-v2-ew2" id="9TZ-LL-dFe"/>
-                                            <outlet property="checkmarkView" destination="fai-ym-ybC" id="eym-6q-fEu"/>
-                                            <outlet property="sortTitleLabel" destination="wH5-Ok-Qxq" id="zDV-zj-Am2"/>
+                                            <outlet property="cardView" destination="fUI-v2-ew2" id="65I-Qo-I2T"/>
+                                            <outlet property="selectedIndicatorView" destination="qK7-ts-Vvs" id="RDJ-no-FZY"/>
+                                            <outlet property="sortTitleLabel" destination="htc-Ci-xmD" id="VC9-ab-5U3"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -337,9 +339,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" name="DarkSecondaryColor"/>
                         <color key="barTintColor" name="PrimaryColor"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" name="PrimaryTextColor"/>
-                        </textAttributes>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -374,14 +373,8 @@
         <namedColor name="DividerColor">
             <color red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="LightSecondaryColor">
-            <color red="1" green="0.75686274509803919" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="PrimaryColor">
             <color red="0.73333333333333328" green="0.87058823529411766" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="PrimaryTextColor">
-            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="PrimaryTextColor">
             <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

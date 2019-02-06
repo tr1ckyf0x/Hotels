@@ -7,28 +7,35 @@
 //
 
 import UIKit
+import MaterialComponents
 
 class SortTypeCell: UITableViewCell {
-
-  @IBOutlet weak var cardView: DesignableView!
+  
+  @IBOutlet weak var cardView: UIView!
   @IBOutlet weak var sortTitleLabel: UILabel!
-  @IBOutlet weak var checkmarkView: DesignableView!
+  @IBOutlet weak var selectedIndicatorView: UIView!
   
+  private var inkTouchController: MDCInkTouchController?
   
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    inkTouchController = MDCInkTouchController(view: cardView)
+    inkTouchController?.addInkView()
+  }
+  
+//  override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+//    <#code#>
+//  }
+  
+  override func setSelected(_ selected: Bool, animated: Bool) {
+    super.setSelected(selected, animated: animated)
+    selectedIndicatorView?.isHidden = !selected
+  }
   
   override func layoutSubviews() {
     super.layoutSubviews()
-    checkmarkView.circleCorner = true
+    selectedBackgroundView?.circleCorner = true
   }
-
+  
 }
