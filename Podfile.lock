@@ -1,0 +1,115 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Differentiator (3.1.0)
+  - Kingfisher (4.10.1)
+  - MaterialComponents/Ink (54.13.0):
+    - MaterialComponents/private/Math
+  - "MaterialComponents/Ink+Extensions (54.13.0)":
+    - "MaterialComponents/Ink+Extensions/ColorThemer (= 54.13.0)"
+  - "MaterialComponents/Ink+Extensions/ColorThemer (54.13.0)":
+    - MaterialComponents/Ink
+    - MaterialComponents/Themes
+  - MaterialComponents/private/Math (54.13.0)
+  - MaterialComponents/schemes/Color (54.13.0)
+  - MaterialComponents/schemes/Typography (54.13.0)
+  - MaterialComponents/Themes (54.13.0):
+    - MaterialComponents/schemes/Color
+    - MaterialComponents/schemes/Typography
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - Moya/RxSwift (12.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - "NSObject+Rx (4.4.1)":
+    - RxSwift (~> 4.3)
+  - R.swift (5.0.2):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.0)
+  - Result (4.1.0)
+  - RxAtomic (4.4.0)
+  - RxCell (0.1.0):
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxKingfisher (0.3.1):
+    - Kingfisher (~> 4)
+    - RxCocoa (~> 4.3)
+    - RxSwift (~> 4.3)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
+  - RxSwiftExt (3.4.0):
+    - RxSwiftExt/Core (= 3.4.0)
+    - RxSwiftExt/RxCocoa (= 3.4.0)
+  - RxSwiftExt/Core (3.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwiftExt/RxCocoa (3.4.0):
+    - RxCocoa (~> 4.0)
+    - RxSwiftExt/Core
+  - RxViewController (0.4.0):
+    - RxCocoa (>= 4.0.0)
+    - RxSwift (>= 4.0.0)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - "MaterialComponents/Ink+Extensions"
+  - Moya/RxSwift (~> 12.0)
+  - "NSObject+Rx"
+  - R.swift
+  - RxCell
+  - RxCocoa (~> 4.0)
+  - RxDataSources (~> 3.0)
+  - RxKingfisher
+  - RxSwift (~> 4.0)
+  - RxSwiftExt
+  - RxViewController
+  - SnapKit (~> 4.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Differentiator
+    - Kingfisher
+    - MaterialComponents
+    - Moya
+    - "NSObject+Rx"
+    - R.swift
+    - R.swift.Library
+    - Result
+    - RxAtomic
+    - RxCell
+    - RxCocoa
+    - RxDataSources
+    - RxKingfisher
+    - RxSwift
+    - RxSwiftExt
+    - RxViewController
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  MaterialComponents: 3399c262334c35e4994a7b25ad1e9a3ce48dce07
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
+  R.swift: 81455d81467763cbd3f4d79d938d05f4ac4c0228
+  R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCell: 4c85c5fe8801906f09dc00e9fb9baf289e8f611c
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxKingfisher: d79612e7a6cab0b67d6e9b63fc1572fccc825afb
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+  RxSwiftExt: 01f8ecbeeb355698e9c75365ebe908b00dacf45d
+  RxViewController: 359bbc2fda373a78605b2735afb0f9f4f3f6c3e4
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: f6c2e4e57cc335b664a7f7b8600ab7e4e896e82a
+
+COCOAPODS: 1.6.0.beta.2

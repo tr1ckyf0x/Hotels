@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xE1-qf-3FF">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Hotels" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bAj-JS-fa6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HotelCardCell" rowHeight="448" id="gf9-hL-zjq" customClass="HotelCardCell" customModule="Hotels" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="448"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gf9-hL-zjq" id="END-Rm-5fy">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="448"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPU-Wp-Txw" customClass="DesignableView" customModule="Hotels" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="8" width="288" height="432"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="0.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="0.0" height="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgN-YB-xTr" customClass="DesignableView" customModule="Hotels" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="8" width="288" height="432"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="5xl-aZ-OLA">
+                                                            <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="5xl-aZ-OLA" secondAttribute="height" multiplier="1:1" id="79x-Sr-7qR"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Western President Hotel at Times Square" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfg-Rp-kC5">
+                                                            <rect key="frame" x="8" y="227" width="272" height="53"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                            <color key="textColor" name="TextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="69 miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAj-0v-33x">
+                                                            <rect key="frame" x="8" y="296" width="52" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="16" id="KYS-me-ibq"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" name="SecondaryTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250 West 77th Street, Manhattan" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8e-XR-TBT">
+                                                            <rect key="frame" x="8" y="344" width="272" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" name="PrimaryTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="P8o-sv-Asa" customClass="DesignableView" customModule="Hotels" customModuleProvider="target">
+                                                            <rect key="frame" x="64" y="296" width="1" height="16"/>
+                                                            <color key="backgroundColor" name="DividerColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="1" id="kPv-W0-7Gr"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Available suits: 2:87:24:65:26:119:202:6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSb-yF-CEJ">
+                                                            <rect key="frame" x="8" y="320" width="272" height="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" name="SecondaryTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9XW-gn-Beh" customClass="StarRatingView" customModule="Hotels" customModuleProvider="target">
+                                                            <rect key="frame" x="69" y="296" width="96" height="16"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="96" id="DqN-oH-wXY"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                                    <real key="value" value="2.3999999999999999"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                                    <color key="value" name="SecondaryColor"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="P8o-sv-Asa" firstAttribute="top" secondItem="hAj-0v-33x" secondAttribute="top" id="1hM-tX-3Q3"/>
+                                                        <constraint firstItem="5xl-aZ-OLA" firstAttribute="top" secondItem="dgN-YB-xTr" secondAttribute="top" id="52E-W6-hLt"/>
+                                                        <constraint firstItem="r8e-XR-TBT" firstAttribute="leading" secondItem="dgN-YB-xTr" secondAttribute="leading" constant="8" id="81U-t7-nng"/>
+                                                        <constraint firstItem="9XW-gn-Beh" firstAttribute="bottom" secondItem="P8o-sv-Asa" secondAttribute="bottom" id="8cb-Er-u99"/>
+                                                        <constraint firstItem="hfg-Rp-kC5" firstAttribute="trailing" secondItem="5xl-aZ-OLA" secondAttribute="trailing" constant="-8" id="BAX-Q9-243"/>
+                                                        <constraint firstItem="hfg-Rp-kC5" firstAttribute="bottom" secondItem="5xl-aZ-OLA" secondAttribute="bottom" constant="-8" id="CJD-Hg-3BC"/>
+                                                        <constraint firstItem="hAj-0v-33x" firstAttribute="leading" secondItem="dgN-YB-xTr" secondAttribute="leading" constant="8" id="DTz-3B-8Rt"/>
+                                                        <constraint firstItem="rSb-yF-CEJ" firstAttribute="leading" secondItem="dgN-YB-xTr" secondAttribute="leading" constant="8" id="GYU-Y4-Rq1"/>
+                                                        <constraint firstItem="r8e-XR-TBT" firstAttribute="top" secondItem="rSb-yF-CEJ" secondAttribute="bottom" constant="8" id="HAT-i7-dhx"/>
+                                                        <constraint firstItem="hfg-Rp-kC5" firstAttribute="leading" secondItem="5xl-aZ-OLA" secondAttribute="leading" constant="8" id="HQL-Zz-rMc"/>
+                                                        <constraint firstAttribute="bottom" secondItem="r8e-XR-TBT" secondAttribute="bottom" priority="200" constant="8" id="QCM-Cg-vXl"/>
+                                                        <constraint firstAttribute="trailing" secondItem="r8e-XR-TBT" secondAttribute="trailing" constant="8" id="Rcp-aV-40Y"/>
+                                                        <constraint firstItem="5xl-aZ-OLA" firstAttribute="leading" secondItem="dgN-YB-xTr" secondAttribute="leading" id="WpP-L7-uQT"/>
+                                                        <constraint firstItem="9XW-gn-Beh" firstAttribute="top" secondItem="P8o-sv-Asa" secondAttribute="top" id="XXo-Au-2o6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="5xl-aZ-OLA" secondAttribute="trailing" id="ef2-9B-Ar4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="rSb-yF-CEJ" secondAttribute="trailing" constant="8" id="fMs-Iu-Y8U"/>
+                                                        <constraint firstItem="P8o-sv-Asa" firstAttribute="bottom" secondItem="hAj-0v-33x" secondAttribute="bottom" id="gRh-Df-vn0"/>
+                                                        <constraint firstItem="rSb-yF-CEJ" firstAttribute="top" secondItem="hAj-0v-33x" secondAttribute="bottom" constant="8" id="hu9-Xp-vam"/>
+                                                        <constraint firstItem="hAj-0v-33x" firstAttribute="top" secondItem="5xl-aZ-OLA" secondAttribute="bottom" constant="8" id="j2x-tS-Wds"/>
+                                                        <constraint firstItem="P8o-sv-Asa" firstAttribute="leading" secondItem="hAj-0v-33x" secondAttribute="trailing" constant="4" id="s1l-vY-d3K"/>
+                                                        <constraint firstItem="9XW-gn-Beh" firstAttribute="leading" secondItem="P8o-sv-Asa" secondAttribute="trailing" constant="4" id="xUz-fL-QlU"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="cPU-Wp-Txw" firstAttribute="leading" secondItem="dgN-YB-xTr" secondAttribute="leading" id="98X-ZR-IAi"/>
+                                                <constraint firstItem="cPU-Wp-Txw" firstAttribute="trailing" secondItem="dgN-YB-xTr" secondAttribute="trailing" id="9Za-0V-IsG"/>
+                                                <constraint firstAttribute="bottom" secondItem="dgN-YB-xTr" secondAttribute="bottom" constant="8" id="D5C-PC-eoZ"/>
+                                                <constraint firstItem="dgN-YB-xTr" firstAttribute="top" secondItem="END-Rm-5fy" secondAttribute="top" constant="8" id="FuI-x7-VA9"/>
+                                                <constraint firstItem="dgN-YB-xTr" firstAttribute="leading" secondItem="END-Rm-5fy" secondAttribute="leading" constant="16" id="V2k-e4-6Ki"/>
+                                                <constraint firstItem="cPU-Wp-Txw" firstAttribute="top" secondItem="dgN-YB-xTr" secondAttribute="top" id="bjh-v3-rmT"/>
+                                                <constraint firstItem="cPU-Wp-Txw" firstAttribute="bottom" secondItem="dgN-YB-xTr" secondAttribute="bottom" id="bsn-pN-kNd"/>
+                                                <constraint firstAttribute="trailing" secondItem="dgN-YB-xTr" secondAttribute="trailing" constant="16" id="xOC-9g-rbk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="r8e-XR-TBT" id="fk3-F5-O6H"/>
+                                            <outlet property="availableSuitsLabel" destination="rSb-yF-CEJ" id="RYv-pG-hwJ"/>
+                                            <outlet property="cardView" destination="dgN-YB-xTr" id="twU-WH-5yW"/>
+                                            <outlet property="distanceLabel" destination="hAj-0v-33x" id="bux-VX-ViR"/>
+                                            <outlet property="hotelImageView" destination="5xl-aZ-OLA" id="xvb-sZ-jBq"/>
+                                            <outlet property="hotelTitleLabel" destination="hfg-Rp-kC5" id="Qbs-16-xPP"/>
+                                            <outlet property="shadowView" destination="cPU-Wp-Txw" id="dC7-On-m3B"/>
+                                            <outlet property="starRatingView" destination="9XW-gn-Beh" id="8Dg-OI-yCN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bAj-JS-fa6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GmY-4a-upm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bAj-JS-fa6" secondAttribute="bottom" id="UL3-hf-l7M"/>
+                            <constraint firstItem="bAj-JS-fa6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="guX-mw-1HO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bAj-JS-fa6" secondAttribute="trailing" id="q13-UO-BYV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1OO-KR-BHP">
+                        <barButtonItem key="rightBarButtonItem" image="ic_filter" id="BHM-cB-O0y"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="bAj-JS-fa6" id="G50-Xh-7dz"/>
+                        <segue destination="CTF-dC-1YJ" kind="show" identifier="ShowDetails" id="FjC-Lt-Cbz"/>
+                        <segue destination="4CQ-aY-gXk" kind="show" id="dkB-Bd-kf8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925.60000000000002" y="-564.46776611694156"/>
+        </scene>
+        <!--Sort View Controller-->
+        <scene sceneID="wAH-QP-LZF">
+            <objects>
+                <viewController id="4CQ-aY-gXk" customClass="SortViewController" customModule="Hotels" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AIX-Kz-vYr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pXZ-6C-3ff">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="50" id="MyE-7R-eCq" customClass="SortTypeCell" customModule="Hotels" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MyE-7R-eCq" id="dhS-ND-kQX">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUI-v2-ew2" customClass="DesignableView" customModule="Hotels" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="4" width="304" height="41.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wH5-Ok-Qxq">
+                                                            <rect key="frame" x="16" y="9" width="100" height="24"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="24" id="Dll-wO-Uc4"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                            <color key="textColor" name="PrimaryTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fai-ym-ybC" customClass="DesignableView" customModule="Hotels" customModuleProvider="target">
+                                                            <rect key="frame" x="272" y="13" width="16" height="16"/>
+                                                            <color key="backgroundColor" name="LightSecondaryColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="16" id="cC7-m7-awZ"/>
+                                                                <constraint firstAttribute="width" secondItem="fai-ym-ybC" secondAttribute="height" multiplier="1:1" id="yXc-aE-6N6"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="circleCorner" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="LightSecondaryColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="fai-ym-ybC" secondAttribute="trailing" constant="16" id="5Jg-3J-SRl"/>
+                                                        <constraint firstItem="wH5-Ok-Qxq" firstAttribute="top" secondItem="fUI-v2-ew2" secondAttribute="top" priority="200" constant="8" id="FTc-fW-uiC"/>
+                                                        <constraint firstItem="wH5-Ok-Qxq" firstAttribute="leading" secondItem="fUI-v2-ew2" secondAttribute="leading" constant="16" id="FWv-1U-yCv"/>
+                                                        <constraint firstItem="fai-ym-ybC" firstAttribute="centerY" secondItem="fUI-v2-ew2" secondAttribute="centerY" id="elJ-FF-mxT"/>
+                                                        <constraint firstItem="wH5-Ok-Qxq" firstAttribute="centerY" secondItem="fUI-v2-ew2" secondAttribute="centerY" id="khh-0H-Ffi"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="0.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="0.0" height="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="fUI-v2-ew2" secondAttribute="bottom" constant="4" id="Nn6-Z1-oib"/>
+                                                <constraint firstAttribute="trailing" secondItem="fUI-v2-ew2" secondAttribute="trailing" constant="8" id="OAs-6V-W0V"/>
+                                                <constraint firstItem="fUI-v2-ew2" firstAttribute="top" secondItem="dhS-ND-kQX" secondAttribute="top" constant="4" id="m2o-xw-9Rl"/>
+                                                <constraint firstItem="fUI-v2-ew2" firstAttribute="leading" secondItem="dhS-ND-kQX" secondAttribute="leading" constant="8" id="uLJ-iH-Dvm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cardView" destination="fUI-v2-ew2" id="9TZ-LL-dFe"/>
+                                            <outlet property="checkmarkView" destination="fai-ym-ybC" id="eym-6q-fEu"/>
+                                            <outlet property="sortTitleLabel" destination="wH5-Ok-Qxq" id="zDV-zj-Am2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ege-Rf-V9a" firstAttribute="trailing" secondItem="pXZ-6C-3ff" secondAttribute="trailing" id="Bre-il-Wya"/>
+                            <constraint firstItem="pXZ-6C-3ff" firstAttribute="top" secondItem="ege-Rf-V9a" secondAttribute="top" id="Jdi-sm-pR0"/>
+                            <constraint firstItem="pXZ-6C-3ff" firstAttribute="leading" secondItem="ege-Rf-V9a" secondAttribute="leading" id="ZsV-hM-pwL"/>
+                            <constraint firstItem="ege-Rf-V9a" firstAttribute="bottom" secondItem="pXZ-6C-3ff" secondAttribute="bottom" id="pg6-he-Nyg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ege-Rf-V9a"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="pXZ-6C-3ff" id="wOj-OM-Lcw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kki-Os-DoC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1685.625" y="-565.14084507042253"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="vqr-7u-7Nc">
+            <objects>
+                <viewController storyboardIdentifier="Map View Controller" id="CTF-dC-1YJ" customClass="MapViewController" customModule="Hotels" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ErI-mI-hU5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wHA-Se-ac1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="o2W-Ab-j7Z" firstAttribute="bottom" secondItem="wHA-Se-ac1" secondAttribute="bottom" id="5Td-qu-guq"/>
+                            <constraint firstItem="wHA-Se-ac1" firstAttribute="top" secondItem="o2W-Ab-j7Z" secondAttribute="top" id="RSX-Fu-6MX"/>
+                            <constraint firstItem="o2W-Ab-j7Z" firstAttribute="trailing" secondItem="wHA-Se-ac1" secondAttribute="trailing" id="qdu-cl-d0u"/>
+                            <constraint firstItem="wHA-Se-ac1" firstAttribute="leading" secondItem="o2W-Ab-j7Z" secondAttribute="leading" id="sxi-qa-mwj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o2W-Ab-j7Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="wHA-Se-ac1" id="gyP-tT-crR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NW2-q9-cHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="226"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1FN-mV-gHT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xE1-qf-3FF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ZS6-o0-8ug" customClass="DesignableNavigationBar" customModule="Hotels" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="DarkSecondaryColor"/>
+                        <color key="barTintColor" name="PrimaryColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="PrimaryTextColor"/>
+                        </textAttributes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.59999999999999998"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ssv-xZ-XW8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jmY-fm-llm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.80000000000001" y="-564.46776611694156"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_filter" width="48" height="48"/>
+        <image name="space" width="655" height="622"/>
+        <namedColor name="DarkSecondaryColor">
+            <color red="0.74901960784313726" green="0.37254901960784315" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DividerColor">
+            <color red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightSecondaryColor">
+            <color red="1" green="0.75686274509803919" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryColor">
+            <color red="0.73333333333333328" green="0.87058823529411766" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryTextColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryTextColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryColor">
+            <color red="0.95686274509803926" green="0.5607843137254902" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryTextColor">
+            <color red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
