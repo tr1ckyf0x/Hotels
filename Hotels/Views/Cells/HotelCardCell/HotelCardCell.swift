@@ -35,7 +35,7 @@ class HotelCardCell: UITableViewCell {
   
   var viewModel: HotelCardCellViewModel! {
     didSet {
-      let cropProcessor = BorderCropImageProcessor(borderWidth: 5)
+      let cropProcessor = BorderCropImageProcessor(borderWidth: 1)
       viewModel.hotelImageUrl.drive(hotelImageView.kf.rx.image(placeholder: R.image.placeholder(), options: [
         .processor(cropProcessor),
         .scaleFactor(UIScreen.main.scale),
